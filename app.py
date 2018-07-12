@@ -25,11 +25,11 @@ from decouple import config
 app = Flask(__name__)
 
 line_bot_api = LineBotApi(
-    config("LINE_ACCESS_TOKEN", default=os.environ.get('LINE_ACCESS_TOKEN'))
+    config("0MZ23nJcb0Rtcn4jkjdm/RjNS07Dx7zj34q2SE84mlbZbrtoGunYlxb6jDIvcYisd+gyBuzGROVx0JGTPoi3DWCQHbm8YJ5aycbWf4gAL7RGx+/b/J2Kkb75Vh7Qo2NmGwi3MDQzUYPAFmbocQypWAdB04t89/1O/w1cDnyilFU=", default=os.environ.get('LINE_ACCESS_TOKEN'))
 )
 handler = WebhookHandler(
     config(
-        "LINE_CHANNEL_SECRET", default=os.environ.get('LINE_CHANNEL_SECRET'))
+        "4350db3555e5530136cd07b53fa4091a", default=os.environ.get('LINE_CHANNEL_SECRET'))
 )
 
 
